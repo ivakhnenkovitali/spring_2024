@@ -11,7 +11,6 @@ public class Main {
         var ctx = new AnnotationConfigApplicationContext(AppConfig.class);
         var repository = ctx.getBean(AirplaneRepository.class);
         var passRepository = ctx.getBean(PassengerRepository.class);
-
 //        var airbus = repository.findByPlaceBetween(250, 500);
 //        airbus.forEach(System.out::println);
 //        repository.findAll().forEach(System.out::println);
