@@ -7,6 +7,8 @@ import org.springframework.jdbc.datasource.SimpleDriverDataSource;
 
 public class Main {
     public static void main(String[] args) {
+
+
         //var datasource = new DriverManagerDataSource();
         var datasource = new SimpleDriverDataSource();
         datasource.setDriverClass(com.mysql.cj.jdbc.Driver.class);
@@ -24,5 +26,8 @@ public class Main {
         System.out.println("______________________");
         jdbcTemplate.update("UPDATE user SET name = ? WHERE age > ?", "Sidor Bulkin", 30);
         jdbcTemplate.query("SELECT * FROM user", new UserRowMapping()).forEach(System.out::println);
+
+        System.out.println("________________________");
     }
+
 }
