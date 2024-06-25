@@ -8,7 +8,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
-
 @Entity
 @Table(name = "airplane")
 @NoArgsConstructor
