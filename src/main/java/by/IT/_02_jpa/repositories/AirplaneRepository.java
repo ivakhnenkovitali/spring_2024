@@ -7,9 +7,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 @Repository
 public interface AirplaneRepository extends CrudRepository<Airplane, Integer> {
-    //find, get, query, delete, update, exist (start word)
-    //By    (where)
-    //Model (where condition)
     Airplane findByModel(String model);
     Airplane findByModelAndPlace(String model, int place);
     Airplane findByModelLike(String model);
