@@ -1,5 +1,4 @@
 package by.IT._02_jpa.entities;
-
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -24,7 +23,6 @@ public class Airplane {
     @OneToMany
     @JoinColumn(name = "airplane_id")
     List<Passenger> passengers;
-
     @Autowired
     public void setPassengers(List<Passenger> passengers) {
         this.passengers = passengers;
