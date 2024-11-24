@@ -1,5 +1,4 @@
 package by.IT._01_jdbc;
-
 import by.itclass._01_jdbc.entities.UserRowMapping;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
