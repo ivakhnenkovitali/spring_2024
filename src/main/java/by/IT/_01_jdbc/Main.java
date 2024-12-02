@@ -23,5 +23,4 @@ public class Main {
         jdbcTemplate.query("SELECT * FROM user", new UserRowMapping()).forEach(System.out::println);
         System.out.println("________________________");
     }
-
 }
