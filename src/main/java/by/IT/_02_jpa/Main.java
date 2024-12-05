@@ -6,9 +6,7 @@ import by.itclass._02_jpa.entities.Passenger;
 import by.itclass._02_jpa.repositories.AirplaneRepository;
 import by.itclass._02_jpa.repositories.PassengerRepository;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
 import java.util.List;
-
 public class Main {
     public static void main(String[] args) {
         var ctx = new AnnotationConfigApplicationContext(AppConfig.class);
@@ -17,11 +15,9 @@ public class Main {
 //        var boeing736 = ctx.getBean("boeing736", Airplane.class);
 //        var airbus300 = ctx.getBean("airbus300", Airplane.class);
 //        System.out.println("We just created " + boeing736);
-//
 //        boeing736 = repository.save(boeing736);
 //        repository.save(airbus300);
 //        System.out.println("Airplane after save " + boeing736);
-//
 //        boeing736.setPlace(200);
 //        boeing736 = repository.save(boeing736);
 //        System.out.println("Airplane after changes " + boeing736);
