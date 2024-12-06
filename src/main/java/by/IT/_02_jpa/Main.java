@@ -1,5 +1,4 @@
 package by.IT._02_jpa;
-
 import by.itclass._02_jpa.configs.AppConfig;
 import by.itclass._02_jpa.entities.Airplane;
 import by.itclass._02_jpa.entities.Passenger;
@@ -31,7 +30,6 @@ public class Main {
 //        repository.concretePlanes("Boe%", 300).forEach(System.out::println);
         var passengers = (List<Passenger>)ctx.getBean("passengers");
         passRepository.saveAll(passengers);
-
         var flight_BRU_982 = ctx.getBean("boeing736", Airplane.class);
         repository.save(flight_BRU_982);
     }
