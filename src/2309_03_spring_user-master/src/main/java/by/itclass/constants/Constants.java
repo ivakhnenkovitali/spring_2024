@@ -1,5 +1,4 @@
 package by.itclass.constants;
-
 public class Constants {
     public static final String ALL_USERS_URL = "/all";
     public static final String DELETE_USER_URL = "/delete";
